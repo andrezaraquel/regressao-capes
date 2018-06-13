@@ -1,6 +1,8 @@
 ---
 title: "Regressão linear na prática"
-output: html_notebook
+output:
+  html_document: default
+  html_notebook: default
 ---
 
 ```{r warning=FALSE, echo=FALSE}
@@ -106,7 +108,7 @@ Produza aqui a sua versão desse texto, portanto:
 
 -----
 
-*SUBSTITUA ESSE TEXTO*
+Regressão linear foi utilizada para analisar se a quantidade de docentes permanentes tem uma associação significativa com a producao do programa de pós graduação. Os resultados da regressão indicam que um modelo com o preditor no formato *producao = -41.27309 + 4.81337xDocentes permanentes* explica *81.46%* da variância da variável de resposta (*R2 = 0.8145886*). A variável *docentes permanentes* é a quantidade de docentes permanentes no programa de pós graduação de cada universidade do país e tem uma relação significativa com o erro (b = [4.269955, 5.356786], IC com 95%). O aumento de 1 unidade de docentes permanentes produz uma mudança de mais ou menos 4.81337 na produção do programa, fato observado pelo valor da estimativa associada à variável *docentes permanentes*.
 
 -----
 
@@ -114,7 +116,7 @@ Dito isso, o que significa a relação que você encontrou na prática para ente
 
 -----
 
-*SUBSTITUA ESSE TEXTO PELA SUA DISCUSSÃO DOS RESULTADOS*
+A variação da produção é explicada em mais de 81% apenas pela quantidade de docentes permamentes no programa de pós graduação. Esse resultado é esperado porque a quantidade de docentes no programa está diretamente associada à quantidade de papers produzidos. Isso indica que são os docentes que mais produzem papers publicados em periódicos no programa, mais especificamente, periódicos com qualis A1, A2 e B1, nesse caso. Isso, provavelmente, deve-se ao fato de que os docentes são os que mais estão envolvidos com pesquisa nas Universidades, produzindo resultados frequentes.  
 
 -----
 
@@ -156,7 +158,8 @@ Considerando agora esses três fatores, o que podemos dizer sobre como cada um d
 
 -----
 
-**EXPLICAÇÃO**: *Substitua esse texto por texto feito tal qual o que usamos com uma variável*
+Regressão múltipla foi utilizada para analisar se a quantidade de docentes permanentes, o número de alunos de mestrado e de doutorado têm uma associação significativa com a producao do programa de pós graduação. Os resultados da regressão indicam que um modelo com os 3 preditores no formato *producao = -14.3663077 + 3.4997112xDocentes permanentes - 0.1949515xalunos mestrado + 1.0007711xalunos doutorado* explicam 87.07% da variância da variável de resposta (R2 = 0.8706642). A variável *docentes permanentes*, quantidade de docentes permanentes no programa de pós graduação de cada universidade do país, tem uma relação significativa com o erro (b = [2.5827257, 4.4166967], IC com 95%), assim como a variável *doutorados*, medida como a quantidade de alunos de doutorado do programa (b = [0.6355112, 1.3660309], IC com 95%). A variável *mestrados*, no entanto, tem uma relação negativa (b = [-0.3577316, -0.0321714], IC com 95%). O aumento de 1 unidade de docentes permanentes produz uma mudança de mais ou menos 3.499711 na produção do programa, assim como o aumento de 1 unidade de alunos de mestrado produz uma mudança de mais ou menos -0.1949515 e aumentar 1 aluno de doutorado produz uma mudança de mais ou menos 1.0007711. Esses fatos são observados pelos valores das estimativas associadas a cada variável independente.
+
 
 -----
 
